@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+li,a,button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+    padding: 10px 10%;
+}
+
+header img {
+    width: 120px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 27px ;
+}
+
+ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+a:hover {
+    color: red;
+}
+
+
+.SlideShow {
+    width: 98,93vw;
+    height: 120vh;
+    overflow: hidden;
+    position: relative ;
+    
+}
+
+.slides {
+    width: 500%; 
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0,6s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.navi {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.bar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #737373;
+}
+.bar:hover {
+    width: 30px;
+    height: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #737373;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20% ;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+.About-Us{
+    
+    background-color: #eee;
+    
+}
+
+.About-Us h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 2.5rem;
+    margin-top: -10px;
+    padding-top: 50px;
+}
+
+.About-Us div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+    
+
+}
+
+.About-Us .abc {
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    border: 2px solid #ba7587;
+}
+
+.About-Us .abc h3 {
+    color: red;
+    font-size: 1.5rem;
+    margin: 20px;
+
+}
+
+.About-Us .abc h6 {
+    color: #aaa;;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    
+
+}
+
+.About-Us .abc i {
+    font-size: 5rem;
+    color: #e32255;
+}
+
+.About-Us .Cong-Dong {
+    padding-top: 0px;
+
+}
